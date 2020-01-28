@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { PhotosService } from './../../services/photos.service';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/Http'
-import { Album } from '../../album';
 
 interface Album {
   id: number;
