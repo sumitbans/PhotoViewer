@@ -1,0 +1,15 @@
+<div class="align-center">
+    <div>
+        <h3>Album {{albumId}} : {{title}}</h3>    
+        <button routerLink="/" class="btn btn-light float-right">Back to Albums</button>
+    </div>
+    <div class="row">
+      <div class="col-md-3 photo" *ngFor="let photo of photos | async">
+        <img src={{photo.thumbnailUrl}} class="img-fluid" />
+      <h4>{{photo.title}}</h4>
+      </div>
+    </div>
+    <div>
+        <button routerLink="/" class="btn btn-light">Back to Albums</button>
+    </div>
+  </div>
